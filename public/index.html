@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>AI Desktop Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background"></div>
+
+    <main class="app">
+
+        <header class="header">
+
+            <div class="brand">
+
+                <div class="logo">
+                    AI
+                </div>
+
+                <div>
+                    <h1>Desktop AI</h1>
+
+                    <p>
+                        Your local Windows assistant
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="status">
+
+                <span class="status-dot"></span>
+
+                Online
+
+            </div>
+
+        </header>
+
+
+        <section class="chat-container">
+
+            <div
+                id="chat"
+                class="chat"
+            >
+
+                <div class="message assistant">
+
+                    <div class="avatar">
+                        AI
+                    </div>
+
+                    <div class="bubble">
+
+                        <div class="message-title">
+                            Desktop AI
+                        </div>
+
+                        <p>
+                            Hello! 👋
+                        </p>
+
+                        <p>
+                            I can control approved actions on your
+                            Windows computer.
+                        </p>
+
+                        <p>
+                            Try:
+                        </p>
+
+                        <div class="examples">
+
+                            <button onclick="useExample('open youtube')">
+                                ▶ Open YouTube
+                            </button>
+
+                            <button onclick="useExample('open this pc')">
+                                💻 Open This PC
+                            </button>
+
+                            <button onclick="useExample('open downloads')">
+                                📁 Open Downloads
+                            </button>
+
+                            <button onclick="useExample('open notepad')">
+                                📝 Open Notepad
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <div
+            id="typing"
+            class="typing hidden"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+            AI is thinking...
+        </div>
+
+
+        <section class="input-area">
+
+            <form id="commandForm">
+
+                <div class="input-wrapper">
+
+                    <input
+                        id="commandInput"
+                        type="text"
+                        autocomplete="off"
+                        placeholder="Tell me what to open..."
+                    >
+
+                    <button
+                        id="sendButton"
+                        type="submit"
+                    >
+                        <span>➤</span>
+                    </button>
+
+                </div>
+
+            </form>
+
+            <div class="hint">
+                Press Enter to send
+            </div>
+
+        </section>
+
+
+        <footer>
+
+            <span>
+                Local Node.js assistant
+            </span>
+
+            <span>
+                •
+            </span>
+
+            <span>
+                Windows
+            </span>
+
+        </footer>
+
+    </main>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
